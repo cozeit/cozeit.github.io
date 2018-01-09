@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Coziet | {{ page.title }}</title>
     {{ seo }}
-    {% if site.icon %}<link ref="icon" href="{{ site.icon }}">{%endif%}
+    {% if site.icon %}<link ref="icon" href="{{ site.icon }}">{% endif %}
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include analytics.html %}
   </head>
   <body>
     <header>
@@ -54,6 +55,5 @@
     <script>window.jQuery || document.write('<script src="/assets/js/jquery-slim.min.js"><\/script>')</script>
     <script src="/assets/js/popper.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
-    {% include analytics.html %}
   </body>
 </html>
